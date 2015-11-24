@@ -2,7 +2,7 @@
 /*
  * GET users listing.
  */
-var chatDB = require("../db/dbConn");
+var chatDB = require("../db/dbconn");
 var logger = require("../utils/logger");
 
 exports.getAllUsers = function(req, res){
