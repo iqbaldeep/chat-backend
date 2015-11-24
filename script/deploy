@@ -1,0 +1,10 @@
+#!/bin/sh
+ssh app@159.203.248.23 <<EOF
+ls -lrt
+cd ~/chat-backend
+git reset --hard
+git pull
+npm install --production
+forever restartall
+exit
+EOF
